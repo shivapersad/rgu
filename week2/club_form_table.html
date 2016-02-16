@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imaginary Badminton Club</title>
+
+    <style>
+        table{
+            border: 1px solid blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Imaginary Badminton Club</h1>
+    <h2>Sign up Form</h2>
+
+    <br>
+
+    <form>
+        <table>
+            <tr>
+                <td><label>First Name:</label></td>
+                <td><input type="text" name="fname" value="" required/></td>
+            </tr>
+            <tr>
+                <td><label>Last Name:</label></td>
+                <td><input type="text" name="lname" value="" required/></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth:</label></td>
+                <td><input type="date" name="dob" value="1970-01-01" required/></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" name="gender" value="male" required/>Male</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="gender" value="female" />Female</td>
+            </tr>
+            <tr>
+                <td><label>Select Racket Hand:</label></td>
+                <td>
+                    <select name="handedness" required>
+                        <option value="">Select Racket Hand</option>
+                        <option value="left">Left</option>
+                        <option value="righ">Right</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Contact Number:</label></td>
+                <td><input type="text" name="contact" value="" required/></td>
+            </tr>
+            <tr>
+                <td><label>Email Address:</label></td>
+                <td><input type="email" name="emailaddress" value="" required/></td>
+            </tr>
+
+            <tr>
+                <td><label>Why are you joining?</label></td>
+                <td><input type="checkbox" name="whyjoin" value="training">Training for Competition</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="whyjoin" value="fitness">To improve my fitness</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="whyjoin" value="kids">I want my kids to play Badminton</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="whyjoin" value="leisure">Leisure Activity</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="whyjoin" value="other">Other</td>
+            </tr>
+            <tr>
+                <td colspan=2><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
