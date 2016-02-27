@@ -14,3 +14,8 @@ table,th,td{
 table{
     border-collapse: collapse;
 }
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
