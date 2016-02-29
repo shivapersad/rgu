@@ -20,6 +20,6 @@ table.center{
     margin-right: auto;
 }
 
-td{
+td.left{
     text-align: left;
 }
