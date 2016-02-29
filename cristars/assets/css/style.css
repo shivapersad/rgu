@@ -1,13 +1,14 @@
 body{
     background-color: #EDF2F4;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     font-family: Merriweather;
+    width: 60%;
 }
 
 h1{
     font-family: Merriweather;
-    text-color: #2B2D42;
+    color: #2B2D42;
+    font-size: 36px;
 }
 
 ul {
@@ -20,6 +21,7 @@ ul {
 
 li {
     float: left;
+    font-size: 24px;
 }
 
 li a {
