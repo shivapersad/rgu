@@ -13,7 +13,7 @@ p{
 
 ul{
     list-style-type: none;
-    margin: 0 2px;
+    margin: 0 40px;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -28,4 +28,16 @@ li a{
     text-align: center;
     padding: 0 10px 10px 10px;
     text-decoration: none;
+}
+
+#sidebar1{
+    background-color: #DBC9DF;
+}
+
+#sidebar2{
+    background-color: #782A7E;
+}
+
+footer{
+    background-color: #363636;
 }
