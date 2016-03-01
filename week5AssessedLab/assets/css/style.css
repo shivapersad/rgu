@@ -1,0 +1,12 @@
+body{
+    max-width: 960px;
+    margin: auto;
+}
+
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
