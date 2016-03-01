@@ -1,0 +1,37 @@
+body{
+    background-color: #EDF2F4;
+    margin: auto;
+    font-family: Merriweather;
+    width: 60%;
+}
+
+h1{
+    font-family: Merriweather;
+    color: #2B2D42;
+    font-size: 36px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8D99AE;
+}
+
+li {
+    float: left;
+    font-size: 24px;
+}
+
+li a {
+    display: inline-block;
+    text-align: center;
+    color: #2B2D42;
+    padding: 0px 40px 40px 40px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #EF233C;
+}
