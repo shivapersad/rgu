@@ -30,6 +30,11 @@ li a{
     text-decoration: none;
 }
 
+img#float_left{
+    float: left;
+    margin: 0 10px 10px 10px;
+}
+
 #sidebar1{
     background-color: #DBC9DF;
 }
