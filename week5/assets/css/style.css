@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    max-width: 1440px;
+    max-width: 960px;
     margin-right: auto;
     margin-left: auto;
     background-color: aliceblue;
@@ -16,7 +16,6 @@ main {
 }
 #cont2 {
     background-color: silver;
-
 }
 
 #cont3 {
