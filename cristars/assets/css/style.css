@@ -27,11 +27,7 @@ li {
 li a {
     display: inline-block;
     text-align: center;
-    color: #2B2D42;
     padding: 0px 40px 40px 40px;
     text-decoration: none;
-}
-
-li a:hover {
-    background-color: #EF233C;
+    color: #2B2D42;
 }
