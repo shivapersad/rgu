@@ -32,13 +32,12 @@
         $name3 = "Chris";
 
         wantedBanner($name1,$items1);
-        echo "<br>";
+        echo "<br><br>";
 
         wantedBanner($name2,$items2);
-        echo "<br>";
+        echo "<br><br>";
 
         wantedBanner($name3,$items3);
-        echo "<br>";
     ?>
 </p>
 </body>
