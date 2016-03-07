@@ -20,6 +20,8 @@
                 echo "On the " . $i . $endings[3] . " of the month specs and mugs are available <br>";
             elseif (($i % 2 == 0) && ($i % 4 == 0))
                 echo "On the " . $i . $endings[3] . " of the month specs and sausage rolls are available <br>";
+            elseif (($i % 2 == 0) && ($i % 3 == 0) && ($i % 4 == 0) )
+                echo "On the " . $i . $endings[3] . " of the month specs, mugs and sausage rolls are available <br>";
             elseif (($i % 3 == 0) && ($i % 4 == 0))
                 echo "On the " . $i . $endings[3] . " of the month mugs and sausage rolls are available <br>";
             elseif ($i % 2 == 0)
