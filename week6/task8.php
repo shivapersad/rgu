@@ -22,10 +22,23 @@
             return $award;
         }
 
-        $items = array(2,3,5);
-        $name = "Shiva";
+        $items1 = array(2,3,5);
+        $name1 = "Shiva";
 
-        wantedBanner($name,$items);
+        $items2 = array(20,32,12);
+        $name2 = "Michal";
+
+        $items3 = array(12,33,25);
+        $name3 = "Chris";
+
+        wantedBanner($name1,$items1);
+        echo "<br>";
+
+        wantedBanner($name2,$items2);
+        echo "<br>";
+
+        wantedBanner($name3,$items3);
+        echo "<br>";
     ?>
 </p>
 </body>
