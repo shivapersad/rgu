@@ -12,22 +12,17 @@
         $winner = rand(0,count($names));
         $specs_winner = $names[$winner];
         unset($names[$winner]);
-        $names = array_values($names);
 
         $winner = rand(0,count($names));
         $mugs_winner = $names[$winner];
         unset($names[$winner]);
-        $names = array_values($names);
-
 
         $winner = rand(0,count($names));
         $sausage_rolls_winner = $names[$winner];
-        unset($names[$winner]);
-        $names = array_values($names);
 
-        echo strtoupper($specs_winner) . " has won all of the specs";
-        echo strtoupper($mugs_winner) . " has won all of the mugs";
-        echo strtoupper($sausage_rolls_winner) . " has won all of the sausage rolls";
+        echo strtoupper($specs_winner) . " has won all of the specs <br>";
+        echo strtoupper($mugs_winner) . " has won all of the mugs <br>";
+        echo strtoupper($sausage_rolls_winner) . " has won all of the sausage rolls <br>";
 
     ?>
 </p>
