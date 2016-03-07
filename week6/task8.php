@@ -13,7 +13,7 @@
             echo "Specs (" . $items[0] . ") <br>";
             echo "Mugs (" . $items[1] . ") <br>";
             echo "Sausage rolls (" . $items[2] . ") <br>";
-            echo "Award for capture: £" . awardForCapture($items);
+            echo "Award for capture: $" . awardForCapture($items);
         }
 
         function awardForCapture($items)
