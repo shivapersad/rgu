@@ -11,12 +11,13 @@
         die("Connection failed: " . $connection->connect_error);
     }
 
-    echo "Connected successfully";
+    echo "Connected successfully <br>";
 
     $qry = "SELECT * from users";
-
-    echo $qry . "<br>";
     $result = mysqli_query($connection,$qry);
+
+    echo print_r($result);
+    echo "<br>";
 
     while ($row = mysqli_fetch_assoc($result))
     {
