@@ -14,6 +14,8 @@
     echo "Connected successfully";
 
     $qry = "SELECT * from users";
+
+    echo $qry . "<br>";
     $result = mysqli_query($connection,$qry);
 
     while ($row = mysqli_fetch_assoc($result))
