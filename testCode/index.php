@@ -12,7 +12,6 @@
         die("Connection failed: " . $connection->connect_error);
     }
 
-    $connection = db_connection();
     echo "Connected successfully <br>";
 
     $qry = "SELECT * from users";
