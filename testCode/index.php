@@ -13,4 +13,13 @@
 
     echo "Connected successfully";
 
+    $qry = "SELECT * from users;";
+    $result = $connection->query($qry);
+
+    foreach ($result as $user)
+    {
+        echo "Username: " . $user["username"];
+        echo "Password: " . $user["password"];
+    }
+
 ?>
