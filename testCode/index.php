@@ -3,14 +3,16 @@
     $servername = "eu-cdbr-azure-north-d.cloudapp.net";
     $username = "bc824cb00f45cd";
     $password = "30e5b1c4";
+    $dbname = "rgu-mysqldb";
 
-    $connection = mysqli_connect($servername,$username,$password);
+    $connection = mysqli_connect($servername,$username,$password,$dbname);
 
     if ($connection -> connect_error)
     {
         die("Connection failed: " . $connection->connect_error);
     }
 
+    $connection = db_connection();
     echo "Connected successfully <br>";
 
     $qry = "SELECT * from users";
