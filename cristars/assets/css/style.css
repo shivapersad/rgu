@@ -1,12 +1,11 @@
 body{
     background-color: #EDF2F4;
     margin: auto;
-    font-family: Merriweather;
+    font-family: 'Raleway', sans-serif;
     width: 60%;
 }
 
 h1{
-    font-family: Merriweather;
     color: #2B2D42;
     font-size: 36px;
 }
@@ -27,7 +26,7 @@ li {
 li a {
     display: inline-block;
     text-align: center;
-    padding: 0px 40px 40px 40px;
+    padding: 0 40px 40px 40px;
     text-decoration: none;
     color: #2B2D42;
 }
