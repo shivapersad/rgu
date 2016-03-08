@@ -20,12 +20,12 @@
     echo print_r($result);
     echo "<br>";
 
-    /* while ($row = mysqli_fetch_assoc($result))
+    while ($row = mysqli_fetch_assoc($result))
     {
         echo "Username: " . $row["username"];
         echo "Password: " . $row["password"];
         echo "Inside Loop <br>";
-    } */
+    }
 
     mysqli_free_result($result);
     echo "Result freed <br>";
