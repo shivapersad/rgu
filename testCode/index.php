@@ -13,13 +13,14 @@
 
     echo "Connected successfully";
 
-    $qry = "SELECT * from users;";
+    $qry = "SELECT * from users";
     $result = $connection->query($qry);
 
-    foreach ($result as $user)
+    while ($row = mysqli_fetch_assoc($result))
     {
-        echo "Username: " . $user["username"];
-        echo "Password: " . $user["password"];
+        echo "Username: " . $row["username"];
+        echo "Password: " . $row["password"];
     }
 
+    mysqli_free_result($result);
 ?>
