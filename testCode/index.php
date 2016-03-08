@@ -17,14 +17,10 @@
     $qry = "SELECT * from users";
     $result = mysqli_query($connection,$qry);
 
-    echo print_r($result);
-    echo "<br>";
-
     while ($row = mysqli_fetch_assoc($result))
     {
-        echo "Username: " . $row["username"];
-        echo "Password: " . $row["password"];
-        echo "Inside Loop <br>";
+        echo "Username: " . $row["username"] . "<br>";
+        echo "Password: " . $row["password"] . "<br>";
     }
 
     mysqli_free_result($result);
@@ -32,6 +28,5 @@
 
     mysqli_close($connection);
     echo "Connection closed";
-
 
 ?>
