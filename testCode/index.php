@@ -20,7 +20,10 @@
     {
         echo "Username: " . $row["username"];
         echo "Password: " . $row["password"];
+        echo "Inside Loop <br>";
     }
 
     mysqli_free_result($result);
+
+    echo "Result freed <br>";
 ?>
