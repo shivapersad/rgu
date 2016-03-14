@@ -23,14 +23,14 @@ else
 <html>
 <head>
     <meta charset="utf-8">
-    <title>PHP Login Form without Session</title>
+    <title>Create a User Form</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-<h1>PHP Login Form with Session</h1>
+<h1>Create a User Form</h1>
 <div class="loginbox">
-    <h3>Login Form</h3>
+    <h3>Please enter your details</h3>
     <br><br>
     <form method="post" action="addUser.php">
         <label>Username:</label><br>
