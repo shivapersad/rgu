@@ -16,7 +16,7 @@
 
             if (mysqli_num_rows($result) == 1)
             {
-                header("location: home.php");
+                header("location: home.php ? username='$username'");
             }
             else
                 {
