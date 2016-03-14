@@ -25,6 +25,8 @@
             </div>
         </div>
 
+        <br><br>
+
         <a href="addUser.php">Add a user</a>
     </body>
 </html>
