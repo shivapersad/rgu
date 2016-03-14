@@ -40,5 +40,8 @@ else
         <input type="submit" name="submit" value="Create user" />
     </form>
 </div>
+
+<br><br>
+<a href="index.php">Login</a>
 </body>
 </html>
