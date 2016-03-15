@@ -18,6 +18,8 @@
 
     <h2>Display All Movies created after 2010</h2>
 
+    <a href="index.php">Home</a>
+
     <table>
         <tr>
             <th>Marvel Movie ID</th>

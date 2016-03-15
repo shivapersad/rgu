@@ -18,6 +18,8 @@
 
         <h2>Display Movies created by Marvel Studios</h2>
 
+        <a href="index.php">Home</a>
+
         <table>
             <tr>
                 <th>Marvel Movie ID</th>
