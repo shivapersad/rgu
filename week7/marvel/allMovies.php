@@ -28,18 +28,18 @@
                 <th>Production Studio</th>
                 <th>Notes</th>
             </tr>
-            <tr>
-                <?php
-                    while ($row = $result -> fetch_array())
-                    {
-                        echo "<td>" . $row['marvelMovieID'] . "</td>";
-                        echo "<td>" . $row['yearReleased'] . "</td>";
-                        echo "<td>" . $row['title'] . "</td>";
-                        echo "<td>" . $row['productionStudio'] . "</td>";
-                        echo "<td>" . $row['notes'] . "</td>";
-                    }
-                ?>
-            </tr>
+            <?php
+                while ($row = $result -> fetch_array())
+                {
+                    echo "<tr>";
+                    echo "<td>" . $row['marvelMovieID'] . "</td>";
+                    echo "<td>" . $row['yearReleased'] . "</td>";
+                    echo "<td>" . $row['title'] . "</td>";
+                    echo "<td>" . $row['productionStudio'] . "</td>";
+                    echo "<td>" . $row['notes'] . "</td>";
+                    echo "</tr>";
+                }
+            ?>
         </table>
     </body>
 </html>
