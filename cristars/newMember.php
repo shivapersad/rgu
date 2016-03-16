@@ -48,23 +48,23 @@
                         </tr>
                         <tr>
                             <td>Gender:</td>
-                            <td><input type="radio" name="gender" value="M">Male</td>
+                            <td><label for="male">Male</label><input type="radio" name="gender" id="male" value="M"></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="radio" name="gender" value="F">Female</td>
+                            <td><label for="female">Female</label><input type="radio" name="gender" id="female" value="F"></td>
                         </tr>
                         <tr>
                             <td>Date of Birth:</td>
-                            <td><input type="date" name="dateOfBirth" value="1980-01-01" max="1960-01-01"></td>
+                            <td><label for="dob"></label><input type="date" name="dateOfBirth" id="dob" value="1980-01-01" min="1960-01-01"></td>
                         </tr>
                         <tr>
                             <td>Handedness:</td>
-                            <td><input type="radio" name="handedness" value="L">Left</td>
+                            <td><label for="left">Left</label><input type="radio" name="handedness" id="left" value="L"></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="radio" name="handedness" value="R">Right</td>
+                            <td><label for="right">Right</label><input type="radio" name="handedness" id="right" value="R"></td>
                         </tr>
                         <tr>
                             <td><input type="submit" value="Submit"></td>
