@@ -14,31 +14,19 @@
     // insert username and password into users table
     $sql = "INSERT INTO users VALUES (NULL,'$username','$password')";
     $result = mysqli_query($db,$sql);
-
-    $message = "User successfully created!";
     // query the database for the AUTO INCREMENT value used for the last insert query
-
-    $sql = "SELECT `AUTO_INCREMENT`
-            FROM  INFORMATION_SCHEMA.TABLES
-            WHERE TABLE_SCHEMA = 'db_cristars'
-            AND   TABLE_NAME   = 'users'";
-
-    $result = mysqli_query($db,$sql);
-
-    $arr = mysqli_fetch_assoc($result);
-    $id = $arr["AUTO_INCREMENT"];
-
-    // Print_r($auto_increment);
-    // echo "<br><br><br>";
-    // echo $auto_increment["AUTO_INCREMENT"];
 
     if ($middleName == NULL)
     {
         $middleName = "";
     }
 
+    $id = $db->insert_id;
+
+    echo $id;
+
     // insert data into members table
-    $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
+    /* $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
 
     if (!mysqli_query($db,$sql))
     {
@@ -46,6 +34,7 @@
     }
 
     $message = "The user was successfully created. Please return to the <a href='login.php'>Member Sign In</a> page to login.";
+    */
 
     // echo $_POST array for easier debugging of data
     // Print_R($_POST);
