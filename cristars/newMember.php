@@ -40,7 +40,7 @@
                         </tr>
                         <tr>
                             <td>Middle Name:</td>
-                            <td><input type="text" placeholder="Middle Name" maxlength="100" name="middleName" required /></td>
+                            <td><input type="text" placeholder="Middle Name" maxlength="100" name="middleName" /></td>
                         </tr>
                         <tr>
                             <td>Last Name:</td>
@@ -48,7 +48,7 @@
                         </tr>
                         <tr>
                             <td>Gender:</td>
-                            <td><label for="male">Male</label><input type="radio" name="gender" id="male" value="M"></td>
+                            <td><label for="male">Male</label><input type="radio" name="gender" id="male" value="M" required></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -56,11 +56,11 @@
                         </tr>
                         <tr>
                             <td>Date of Birth:</td>
-                            <td><label for="dob"></label><input type="date" name="dateOfBirth" id="dob" value="1980-01-01" min="1960-01-01"></td>
+                            <td><label for="dob"></label><input type="date" name="dateOfBirth" id="dob" value="1980-01-01" min="1960-01-01" required></td>
                         </tr>
                         <tr>
                             <td>Handedness:</td>
-                            <td><label for="left">Left</label><input type="radio" name="handedness" id="left" value="L"></td>
+                            <td><label for="left">Left</label><input type="radio" name="handedness" id="left" value="L" required></td>
                         </tr>
                         <tr>
                             <td></td>
