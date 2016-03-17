@@ -1,11 +1,3 @@
-<?php
-
-    include_once("connection.php");
-
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -40,7 +32,7 @@
 
             <h3>Members Login</h3>
 
-            <form>
+            <form method="post" action="checkLogin.php">
                 <table>
                     <tr>
                         <td>Username:</td>

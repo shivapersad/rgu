@@ -2,7 +2,6 @@
 
     include_once("connection.php");
 
-    /*
     $firstName = $_POST['firstName'];
     $middleName = $_POST['middleName'];
     $lastName = $_POST['lastName'];
@@ -11,16 +10,6 @@
     $handedness = $_POST['handedness'];
     $username = $_POST['username'];
     $password = $_POST['password'];
-    */
-
-    $firstName = "Shiva";
-    $middleName = "";
-    $lastName = "Persad";
-    $gender = 'M';
-    $dateOfBirth = "1987-07-12";
-    $handedness = 'L';
-    $username = "shivapersad2";
-    $password = "password-2";
 
     // insert username and password into users table
     $sql = "INSERT INTO users VALUES (NULL,'$username','$password',NOW())";
@@ -34,8 +23,6 @@
 
     $id = $db->insert_id;
 
-    echo $id;
-
     // insert data into members table
     $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
 
@@ -43,11 +30,10 @@
     {
         echo ("Error description: " . mysqli_error($db));
     }
-
-    $message = "The user was successfully created. Please return to the <a href='login.php'>Member Sign In</a> page to login.";
-
-    // echo $_POST array for easier debugging of data
-    // Print_R($_POST);
+    else
+        {
+            $message = "The user was successfully created. Please return to the <a href='login.php'>Member Sign In</a> page to login.";
+        }
 
 ?>
 
