@@ -67,6 +67,14 @@
                             <td><label for="right">Right</label><input type="radio" name="handedness" id="right" value="R"></td>
                         </tr>
                         <tr>
+                            <td>Username:</td>
+                            <td><input type="text" name="username" placeholder="Username" maxlength="100" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="password" placeholder="Password" required></td>
+                        </tr>
+                        <tr>
                             <td><input type="submit" value="Submit"></td>
                         </tr>
                     </table>
