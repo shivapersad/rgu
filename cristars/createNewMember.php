@@ -26,7 +26,7 @@
     echo $id;
 
     // insert data into members table
-    /* $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
+    $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
 
     if (!mysqli_query($db,$sql))
     {
@@ -34,7 +34,6 @@
     }
 
     $message = "The user was successfully created. Please return to the <a href='login.php'>Member Sign In</a> page to login.";
-    */
 
     // echo $_POST array for easier debugging of data
     // Print_R($_POST);
