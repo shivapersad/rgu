@@ -81,7 +81,6 @@
 
                 <h3>Create New Member</h3>
 
-                <p><?php echo $sql; ?></p>
                 <p><?php echo $message; ?></p>
 
             </section>
@@ -95,3 +94,9 @@
     </body>
 
 </html>
+
+<?php
+
+    mysqli_close($db);
+
+?>
