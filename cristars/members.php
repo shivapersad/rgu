@@ -4,8 +4,45 @@
 
     $id = $_GET["id"];
 
-    echo $id;
+    $sql = "SELECT * FROM members where id='$id'";
 
+    if (!$result = mysqli_query($db,$sql))
+    {
+        echo "Error with SQL";
+    }
+    else
+        {
+            $arr = mysqli_fetch_assoc($result);
+            $firstName = $arr['firstName'];
+            $middleName = $arr['middleName'];
+            $lastName = $arr['lastName'];
+            $g = $arr['gender'];
+            $dob = $arr['dateOfBirth'];
+            $hand = $arr['handedness'];
+
+            $fullName = $firstName . " " . $middleName . " " . $lastName;
+
+            if ($g == 'M')
+            {
+                $gender = "Male";
+            }
+            else
+                {
+                    $gender = "Female";
+                }
+
+            $dateOfBirth = date_format($dob , 'd-M-Y');
+            
+            if ($hand == 'L')
+            {
+                $handedness = "Left";
+            }
+            else
+                {
+                    $handedness = "Right";
+                }
+
+        }
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +79,12 @@
 
         <h3>Player's Information</h3>
 
+        <img src="assets/images/male.png" alt="Player's Image" />
+
+        Full Name: <?php echo $fullName; ?>
+        Gender: <?php echo $gender; ?>
+        Date of Birth: <?php echo $dateOfBirth; ?>
+        Handedness: <?php echo $handedness; ?>
 
     </section>
 
