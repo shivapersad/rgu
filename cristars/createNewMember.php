@@ -24,6 +24,9 @@
             AND   TABLE_NAME   = 'users'";
 
     $result = mysqli_query($db,$sql);
+
+    echo "Retrieved auto increment";
+
     $arr = mysqli_fetch_assoc($result);
     $id = $arr["AUTO_INCREMENT"];
 
@@ -39,6 +42,8 @@
     // insert data into members table
     $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
     $result = mysqli_query($db,$sql);
+
+    echo "Insert statement";
 
     $message = "The user was successfully created. Please return to the <a href='login.php'>Member Sign In</a> page to login.";
 
