@@ -26,6 +26,10 @@
     $auto_increment = mysqli_fetch_assoc($result);
 
     Print_r($auto_increment);
+
+    echo "<br><br><br>";
+
+    echo $auto_increment["AUTO_INCREMENT"];
     // insert data into members table
 
 
