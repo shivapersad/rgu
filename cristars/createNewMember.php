@@ -25,13 +25,12 @@
 
     $auto_increment = mysqli_fetch_assoc($result);
 
-    // Print_R($auto_increment);
     echo $auto_increment["AUTO_INCREMENT"];
 
     // insert data into members table
 
 
     // echo $_POST array for easier debugging of data
-    Print_R($_POST);
+    // Print_R($_POST);
 
 ?>
