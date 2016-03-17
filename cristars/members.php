@@ -81,10 +81,12 @@
 
         <img src="assets/images/male.png" alt="Player's Image" />
 
-        Full Name: <?php echo $fullName; ?>
-        Gender: <?php echo $gender; ?>
-        Date of Birth: <?php echo $dateOfBirth; ?>
-        Handedness: <?php echo $handedness; ?>
+        <p>
+           Full Name: <?php echo $fullName; ?>
+           Gender: <?php echo $gender; ?>
+           Date of Birth: <?php echo $dateOfBirth; ?>
+           Handedness: <?php echo $handedness; ?>
+        </p>
 
     </section>
 
