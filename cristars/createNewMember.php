@@ -19,8 +19,8 @@
     $gender = 'M';
     $dateOfBirth = "1987-07-12";
     $handedness = 'L';
-    $username = "shivapersad";
-    $password = "password-1";
+    $username = "shivapersad2";
+    $password = "password-2";
 
     // insert username and password into users table
     $sql = "INSERT INTO users VALUES (NULL,'$username','$password',NOW())";
