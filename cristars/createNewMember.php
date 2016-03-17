@@ -2,6 +2,7 @@
 
     include_once("connection.php");
 
+    /*
     $firstName = $_POST['firstName'];
     $middleName = $_POST['middleName'];
     $lastName = $_POST['lastName'];
@@ -10,6 +11,16 @@
     $handedness = $_POST['handedness'];
     $username = $_POST['username'];
     $password = $_POST['password'];
+    */
+
+    $firstName = "Shiva";
+    $middleName = "";
+    $lastName = "Persad";
+    $gender = 'M';
+    $dateOfBirth = "1987-07-12";
+    $handedness = 'L';
+    $username = "shivapersad";
+    $password = "password-1";
 
     // insert username and password into users table
     $sql = "INSERT INTO users VALUES (NULL,'$username','$password')";
