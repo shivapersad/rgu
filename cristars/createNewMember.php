@@ -15,7 +15,9 @@
     $sql = "INSERT INTO users VALUES (NULL,'$username','$password')";
     $result = mysqli_query($db,$sql);
 
+    $message = "User successfully created!";
     // query the database for the AUTO INCREMENT value used for the last insert query
+
     $sql = "SELECT `AUTO_INCREMENT`
             FROM  INFORMATION_SCHEMA.TABLES
             WHERE TABLE_SCHEMA = 'db_cristars'
@@ -28,6 +30,11 @@
     // Print_r($auto_increment);
     // echo "<br><br><br>";
     // echo $auto_increment["AUTO_INCREMENT"];
+
+    if ($middleName == NULL)
+    {
+        $middleName = "";
+    }
 
     // insert data into members table
     $sql = "INSERT INTO members VALUES ('$id','$firstName','$middleName','$lastName','$gender','$dateOfBirth','$handedness')";
