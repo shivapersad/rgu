@@ -23,7 +23,7 @@
     $password = "password-1";
 
     // insert username and password into users table
-    $sql = "INSERT INTO users VALUES (NULL,'$username','$password')";
+    $sql = "INSERT INTO users VALUES (NULL,'$username','$password',NOW())";
     $result = mysqli_query($db,$sql);
     // query the database for the AUTO INCREMENT value used for the last insert query
 
