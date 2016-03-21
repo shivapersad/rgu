@@ -12,7 +12,7 @@
     $result = mysqli_query($db,$sql);
 
     echo "<pre>";
-    print_r($result);
+    print_r(array_values($result));
     echo "</pre>";
 
 ?>
@@ -44,7 +44,7 @@
                                 while ($row = $result->fetch_array())
                                 {
                                     $fullname = $row['firstname'] . " " . $row['lastname'];
-                                    echo "<option value=\"{$row['id']}\">{$fullname}</option>";
+                                    echo "<option value=\"{$row['id']}\">$fullname</option>";
                                 }
                                 ?>
                             </select>
