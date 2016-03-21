@@ -15,8 +15,8 @@
     {
         echo "<ul>";
         echo "<li>{$row['superheroID']}</li>";
-        echo "<li>{$row['firstname']}</li>";
-        echo "<li>{$row['lastname']}</li>";
+        echo "<li>{$row['firstName']}</li>";
+        echo "<li>{$row['lastName']}</li>";
         echo "<li>{$row['mainSuperpower']}</li>";
         echo "</ul>";
         echo "<br>";
@@ -49,7 +49,7 @@
 
                                 while ($row = $result->fetch_array())
                                 {
-                                    $fullname = $row['firstname'] . " " . $row['lastname'];
+                                    $fullname = $row['firstName'] . " " . $row['lastName'];
                                     echo "<option value=\"{$row['id']}\">$fullname</option>";
                                 }
                                 ?>
