@@ -12,11 +12,7 @@
 
     $sql = "INSERT INTO battles VALUES (NULL , {$superheroID} , {$villain})";
 
-    echo $sql;
-
-    $message = "<br><br>Placeholder";
-
-    /* if ($result = mysqli_query($db,$sql))
+    if ($result = mysqli_query($db,$sql))
     {
         $message = "Battle successfully added to the database!!";
     }
@@ -24,7 +20,6 @@
         {
             $message = "Error description: " . mysqli_error($db);
         }
-    */
 
 ?>
 
