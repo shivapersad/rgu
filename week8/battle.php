@@ -50,6 +50,10 @@
                         <td>Villain Fought:</td>
                         <td><input type="text" name="villain" required /></td>
                     </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit" /></td>
+                        <td></td>
+                    </tr>
                 </table>
             </form>
         
