@@ -25,6 +25,7 @@
         <header>
             <h1>Superhero Management System</h1>
             <h2>Display all Superheroes</h2>
+            
             <ul>
                 <li><a href="superheroform.html">Add a Superhero</a></li>
                 <li><a href="showsuperheroes.php">Display all Superheroes</a></li>
