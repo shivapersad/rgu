@@ -24,8 +24,7 @@
 
         <header>
             <h1>Superhero Management System</h1>
-            <h2>Display all Superheroes</h2>
-            
+
             <ul>
                 <li><a href="superheroform.html">Add a Superhero</a></li>
                 <li><a href="showsuperheroes.php">Display all Superheroes</a></li>
@@ -34,12 +33,11 @@
             </ul>
 
             <img src="assets/images/superheroes2.png" />
+            <h2>Display all Superheroes</h2>
         </header>
 
         <main>
             <div>
-                <h2>Display all Superheroes</h2>
-
                 <table>
                     <tr>
                         <th>First Name</th>

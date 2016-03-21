@@ -9,7 +9,6 @@
     
         <header>
             <h1>Superhero Management System</h1>
-            <h2>Display Battles</h2>
             
             <ul>
                 <li><a href="superheroform.html">Add a Superhero</a></li>
@@ -19,6 +18,7 @@
             </ul>
 
             <img src="assets/images/superheroes2.png" />
+            <h2>Display Battles</h2>
         </header>
         
         <main>
