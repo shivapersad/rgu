@@ -15,9 +15,9 @@
             <p>
                 Where would you like to say hello?
 
-                <a href="helloPrinter.php?planet=earth">Earth</a>
-                <a href="helloPrinter.php?planet=mars">Mars</a>
-                <a href="helloPrinter.php?planet=uranus">Uranus</a>
+                <a href="helloPrinter.php?planet=Earth">Earth</a>
+                <a href="helloPrinter.php?planet=Mars">Mars</a>
+                <a href="helloPrinter.php?planet=Uranus">Uranus</a>
             </p>
 
         </main>
