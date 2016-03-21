@@ -48,7 +48,7 @@
     
         <main>
             <p>
-                <?php echo $message; ?>;
+                <?php echo $message ?>;
             </p>
         </main>
         

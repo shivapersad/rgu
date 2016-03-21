@@ -48,9 +48,9 @@
                         while ($row = $result->fetch_array())
                         {
                             echo "<tr>";
-                            echo "<td>";echo $row['firstName'];echo "</td>";
-                            echo "<td>";echo $row['lastName'];echo "</td>";
-                            echo "<td>";echo $row['mainSuperpower'];echo "</td>";
+                            echo "<td>".$row['firstName']."</td>";
+                            echo "<td>".$row['lastName']."</td>";
+                            echo "<td>".$row['mainSuperpower']."</td>";
                             echo "</tr>";
                         }
                     ?>
