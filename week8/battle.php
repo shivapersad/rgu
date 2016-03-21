@@ -50,7 +50,7 @@
                                 while ($row = $result->fetch_array())
                                 {
                                     $fullname = $row['firstName'] . " " . $row['lastName'];
-                                    echo "<option value=\"{$row['id']}\">$fullname</option>";
+                                    echo "<option value=\"{$row['superheroID']}\">$fullname</option>";
                                 }
                                 ?>
                             </select>
