@@ -7,11 +7,11 @@
         die ('Connect failed ['.$db->connect_error.']');
     }
 
-    $firstName = $_POST["fname"];
-    $lastName = $_POST["lname"];
-    $power = $_POST["power"];
+    $firstName = $_POST['fname'];
+    $lastName = $_POST['lname'];
+    $power = $_POST['power'];
 
-    $sql = "INSERT INTO superheroes VALUES (NULL , {$firstName} , {$lastName} , {$power})";
+    $sql = "INSERT INTO superheroes VALUES (NULL , '$firstName' , '$lastName' , '$power')";
 
     $result = mysqli_query($db,$sql);
 
