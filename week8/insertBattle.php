@@ -18,7 +18,7 @@
     }
     else
         {
-            $message = "An error was encountered.";
+            $message = "Error description: " . mysqli_error($db);
         }
 
 ?>
