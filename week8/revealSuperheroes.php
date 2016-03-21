@@ -22,7 +22,7 @@
         </header>
 
         <main>
-            <p>
+            <div>
                 You have been revealed!!! Here is your information:<br>
 
                 <table>
@@ -36,14 +36,14 @@
                     </tr>
                     <tr>
                         <td>Gender:</td>
-                        <td><?php echo $gender; ?></td>
+                        <td><?php echo ucfirst($gender); ?></td>
                     </tr>
                     <tr>
                         <td>Main Superhero Power:</td>
                         <td><?php echo $power; ?></td>
                     </tr>
                 </table>
-            </p>
+            </div>
 
         </main>
 
