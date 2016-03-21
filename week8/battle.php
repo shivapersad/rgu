@@ -11,6 +11,10 @@
 
     $result = mysqli_query($db,$result);
 
+    echo "<pre>";
+    print_r($result);
+    echo "</pre>";
+
 ?>
 
 <!DOCTYPE html>
