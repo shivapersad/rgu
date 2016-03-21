@@ -9,7 +9,7 @@
 
     $sql = "SELECT * from superheroes";
 
-    $result = mysqli_query($db,$result);
+    $result = mysqli_query($db,$sql);
 
     echo "<pre>";
     print_r($result);
