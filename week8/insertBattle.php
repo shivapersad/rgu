@@ -7,7 +7,7 @@
         die('Connect failed: ' . $db->connect_errno);
     }
 
-    $superheroID = $_POST['superheroID'];
+    $superheroID = $_POST['superhero'];
     $villain = $_POST['villain'];
 
     $sql = "INSERT INTO battles VALUES (NULL , {$superheroID} , {$villain})";
