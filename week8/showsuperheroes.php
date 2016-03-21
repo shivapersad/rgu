@@ -41,20 +41,14 @@
                         <th>Main Superpower</th>
                     </tr>
                     <?php
-                        echo "<tr>";
                         while ($row = $result->fetch_array())
                         {
-                            echo "<td>";
-                            echo $row['firstName'];
-                            echo "</td>";
-                            echo "<td>";
-                            echo $row['lastName'];
-                            echo "</td>";
-                            echo "<td>";
-                            echo $row['mainSuperpower'];
-                            echo "</td>";
+                            echo "<tr>";
+                            echo "<td>";echo $row['firstName'];echo "</td>";
+                            echo "<td>";echo $row['lastName'];echo "</td>";
+                            echo "<td>";echo $row['mainSuperpower'];echo "</td>";
+                            echo "</tr>";
                         }
-                        echo "</tr>";
                     ?>
                 </table>
             </div>
