@@ -34,7 +34,7 @@
     
         <header>
             <h1>Superhero Management System</h1>
-            <h2>Insert Battle</h2>
+            <h2>Insert Battle Information</h2>
             
             <ul>
                 <li><a href="superheroform.html">Add a Superhero</a></li>
