@@ -10,7 +10,7 @@
     $superheroID = $_POST['superhero'];
     $villain = $_POST['villain'];
 
-    echo $superherID;
+    echo $superheroID;
     echo "<br><br>";
     echo $villain;
 
