@@ -11,10 +11,16 @@
 
     $result = mysqli_query($db,$sql);
 
-    echo "<pre>";
-    print_r(array_values($result));
-    echo "</pre>";
-
+    while ($row = $result->fetch_array())
+    {
+        echo "<ul>";
+        echo "<li>{$row['superheroID']}</li>";
+        echo "<li>{$row['firstname']}</li>";
+        echo "<li>{$row['lastname']}</li>";
+        echo "<li>{$row['mainSuperpower']}</li>";
+        echo "</ul>";
+        echo "<br>";
+    }
 ?>
 
 <!DOCTYPE html>
