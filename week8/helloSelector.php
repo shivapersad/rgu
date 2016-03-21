@@ -14,6 +14,7 @@
         <main>
             <p>
                 Where would you like to say hello?
+                <br><br>
 
                 <img src="assets/images/earth.jpg" width="300" height="300" />
                 <a href="helloPrinter.php?planet=Earth">Earth</a>
