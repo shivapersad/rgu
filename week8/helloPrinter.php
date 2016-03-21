@@ -1,3 +1,9 @@
+<?php
+
+    $planet = $_GET["planet"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +14,13 @@
     <body>
 
         <header>
-
+            <h1>Hello World 2.0</h1>
         </header>
 
         <main>
-
-
+            <p>
+                Hello <?php echo $planet; ?>
+            </p>
         </main>
 
         <br><br>
