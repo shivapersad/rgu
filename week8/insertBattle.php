@@ -10,11 +10,7 @@
     $superheroID = $_POST['superhero'];
     $villain = $_POST['villain'];
 
-    echo $superheroID;
-    echo "<br><br>";
-    echo $villain;
-
-    /* $sql = "INSERT INTO battles VALUES (NULL , $superheroID , $villain)";
+    $sql = "INSERT INTO battles VALUES (NULL , {$superheroID} , {$villain})";
 
     if ($result = mysqli_query($db,$sql))
     {
@@ -24,7 +20,7 @@
         {
             $message = "Error description: " . mysqli_error($db);
         }
-    */
+
 ?>
 
 <!DOCTYPE html>
