@@ -1,3 +1,18 @@
+<?php
+
+    include_once('connection.php');
+
+    if ($db->connect_errorno)
+    {
+        die('Connected failed: ' . $db->connect_errno);
+    }
+
+    $sql = "SELECT * FROM superherobattles";
+
+    $result = mysqli_query($db,$sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +37,28 @@
         </header>
         
         <main>
-        
+
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Main Superpower</th>
+                    <th>Villain Fought</th>
+                </tr>
+                <?php
+
+                    echo "<tr>";
+                    while ($row = $result -> fetch_array())
+                    {
+                        echo "<td>".$row['firstname']."</td>";
+                        echo "<td>".$row['lastname']."</td>";
+                        echo "<td>".$row['mainSuperPower']."</td>";
+                        echo "<td>".$row['villainFought']."</td>";
+                    }
+                    echo "</tr>";
+                
+                ?>
+            </table>
         
         </main>
         

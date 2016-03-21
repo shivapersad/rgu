@@ -4,7 +4,7 @@
 
     if ($db -> connect_errno)
     {
-        die ('Connect failed ['.$db->connect_error.']');
+        die ('Connect failed ' . $db->connect_error);
     }
 
     $firstName = $_POST['fname'];
