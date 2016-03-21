@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Superhero Management System</title>
 </head>
 
     <body>
-
+    
         <header>
-
+        
         </header>
-
+    
         <main>
-
-
+        
+        
         </main>
-
+        
         <br><br>
         
-        <footer></footer>
-
+        <footer>Superhero Management System</footer>
+    
     </body>
 
 </html>
