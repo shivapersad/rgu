@@ -1,3 +1,28 @@
+<?php
+
+    include_once('connection.php');
+
+    if ($db -> connect_errno)
+    {
+        die('Connect failed: ' . $db->connect_errno);
+    }
+
+    $superheroID = $_POST['superheroID'];
+    $villain = $_POST['villain'];
+
+    $sql = "INSERT INTO battles VALUES (NULL , $superheroID, $villain)";
+
+    if ($result = mysqli_query($db,$sql))
+    {
+        $message = "Battle successfully added to the database!!";
+    }
+    else
+        {
+            $message = "An error was encountered.";
+        }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +33,14 @@
     <body>
     
         <header>
-        
+            <h1>Superhero Management System</h1>
+            <h2>Insert Battle</h2>
         </header>
     
         <main>
-        
-        
+            <p>
+                <?php echo $message; ?>;
+            </p>
         </main>
         
         <br><br>
@@ -23,3 +50,9 @@
     </body>
 
 </html>
+
+<?php
+
+    mysqli_close($db);
+
+?>
