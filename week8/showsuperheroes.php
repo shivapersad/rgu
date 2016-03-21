@@ -28,6 +28,8 @@
                 <li><a href="superheroform.html">Add a Superhero</a></li>
                 <li><a href="showsuperheroes.php">Display all Superheroes</a></li>
             </ul>
+
+            <img src="assets/images/superheroes2.png" />
         </header>
 
         <main>
