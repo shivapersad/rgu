@@ -25,7 +25,7 @@
 
         <br><br>
 
-        <footer></footer>
+        <footer>Hello World 2.0</footer>
 
     </body>
 

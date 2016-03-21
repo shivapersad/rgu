@@ -15,9 +15,15 @@
             <p>
                 Where would you like to say hello?
 
+                <img src="assets/images/earth.jpg" width="300" height="300" />
                 <a href="helloPrinter.php?planet=Earth">Earth</a>
+                <br>
+                <img src="assets/images/mars.jpg" width="300" height="300" />
                 <a href="helloPrinter.php?planet=Mars">Mars</a>
+                <br>
+                <img src="assets/images/uranus.jpg" width="300" height="300" />
                 <a href="helloPrinter.php?planet=Uranus">Uranus</a>
+                <br>
             </p>
 
         </main>
