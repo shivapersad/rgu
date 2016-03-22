@@ -37,26 +37,6 @@
         </header>
 
         <main>
-            <!-- <div>
-                <table>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Main Superpower</th>
-                    </tr>
-                    <?php
-                        while ($row = $result->fetch_array())
-                        {
-                            echo "<tr>";
-                            echo "<td>".$row['firstName']."</td>";
-                            echo "<td>".$row['lastName']."</td>";
-                            echo "<td>".$row['mainSuperpower']."</td>";
-                            echo "</tr>";
-                        }
-                    ?>
-                </table>
-            </div> -->
-
             <div>
                 <ul>
                     <?php
