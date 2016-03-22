@@ -45,7 +45,7 @@
 
                         while ($row = $result->fetch_array())
                         {
-                            echo "<li>" . $row['firstName'] . " " . $row['lastName'] . " fought " . $row['villainFought'] . " with " . $row['mainSuperpower'] . " powers.</li>";
+                            echo "<li>" . $row['firstname'] . " " . $row['lastname'] . " fought " . $row['villainFought'] . " with " . $row['mainSuperpower'] . " powers.</li>";
                         }
 
                     ?>
