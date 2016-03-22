@@ -11,6 +11,8 @@
 
     $result = mysqli_query($db,$sql);
 
+    $sql = "SELECT * from superheroes";
+
 ?>
 
 <!DOCTYPE html>
