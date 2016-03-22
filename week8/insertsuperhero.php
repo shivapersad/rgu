@@ -44,6 +44,8 @@
             <div>
                 <p>
                     Superhero successfully added to the database!!!
+                    <br><br>
+                    Do you want to <a href="superheroform.html">add</a> another?
                 </p>
             </div>
 
