@@ -43,7 +43,7 @@
 
                         while ($row = $result->fetch_array())
                         {
-                            echo "<li>" . $row['firstName'] . " " . $row['lastName'] . "has " . $row['mainSuperpower'] . "powers.</li>";
+                            echo "<li>" . $row['firstName'] . " " . $row['lastName'] . " has " . $row['mainSuperpower'] . " powers.</li>";
                         }
 
                     ?>

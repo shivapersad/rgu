@@ -38,27 +38,20 @@
         
         <main>
 
-            <table>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Main Superpower</th>
-                    <th>Villain Fought</th>
-                </tr>
-                <?php
+            <div>
 
-                    echo "<tr>";
-                    while ($row = $result -> fetch_array())
-                    {
-                        echo "<td>".$row['firstname']."</td>";
-                        echo "<td>".$row['lastname']."</td>";
-                        echo "<td>".$row['mainSuperPower']."</td>";
-                        echo "<td>".$row['villainFought']."</td>";
-                    }
-                    echo "</tr>";
-                
-                ?>
-            </table>
+                <ul>
+                    <?php
+
+                        while ($row = $result->fetch_array())
+                        {
+                            echo "<li>" . $row['firstName'] . " " . $row['lastName'] . " fought " . $row['villainFought'] . " with " . $row['mainSuperpower'] . " powers.</li>";
+                        }
+
+                    ?>
+                </ul>
+
+            </div>
         
         </main>
         
