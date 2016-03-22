@@ -37,7 +37,7 @@
         </header>
 
         <main>
-            <div>
+            <!-- <div>
                 <table>
                     <tr>
                         <th>First Name</th>
@@ -55,6 +55,19 @@
                         }
                     ?>
                 </table>
+            </div> -->
+
+            <div>
+                <ul>
+                    <?php
+
+                        while ($row = $result->fetch_array())
+                        {
+                            echo "<li>" . $row['firstName'] . " " . $row['lastName'] . "has " . $row['mainSuperpower'] . "powers.</li>";
+                        }
+
+                    ?>
+                </ul>
             </div>
 
         </main>
