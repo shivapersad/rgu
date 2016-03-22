@@ -48,7 +48,9 @@
     
         <main>
             <p>
-                <?php echo $message ?>;
+                <?php echo $message ?>
+                <br><br>
+                Do you want to <a href="battle.php">add</a> another battle?
             </p>
         </main>
         
