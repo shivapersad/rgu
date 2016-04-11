@@ -5,6 +5,7 @@
 
     if ($username == "spersad" && $password == "password-1")
     {
+        session_start();
         $_SESSION['username'] = $username;
         $_SESSION['access_level'] = "standarduser";
     }
