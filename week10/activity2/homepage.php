@@ -2,7 +2,7 @@
 
     session_start();
     $username = $_SESSION['username'];
-    $access_level = $_SESSION['access_level_cookie'];
+    $access_level = $_SESSION['access_level'];
 
     echo "<h1>Welcome $username<br>";
 
