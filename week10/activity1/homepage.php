@@ -6,6 +6,8 @@
 
     echo "<h1>Welcome $username<br>";
 
+    displayAccessLevelInformation($access_level);
+
     function displayAccessLevelInformation($accessLevel)
     {
         if ($accessLevel == "standarduser")
