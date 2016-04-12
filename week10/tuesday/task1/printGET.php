@@ -1,3 +1,2 @@
 <?php
-    print ($_GET["query"]);
-    print ($_GET["type"]);
+   print_r($_GET);
