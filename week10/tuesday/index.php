@@ -6,13 +6,13 @@
 </head>
 <body>
     <?
-
         if ($_SERVER['REQUEST_METHOD'] === 'GET')
         {
     ?>
     <form action="<? {$_SERVER['PHP_SELF'];} ?>" method="post">
         <label>Forename</label>
         <input type="text" name="forename">
+        <br>
         <label>Surname</label>
         <input type="text" name="surname">
         <p><input type="submit" value="Submit"></p>
