@@ -8,9 +8,9 @@
     <body>
 
         <article>
-            <h1><? echo $_POST["title"]; ?></h1>
-            <p><? echo $_POST["content"]; ?></p>
-            <strong> <? echo $_POST["category"]; ?></strong>
+            <h1><? echo $_GET["title"]; ?></h1>
+            <p><? echo $_GET["content"]; ?></p>
+            <strong> <? echo $_GET["category"]; ?></strong>
         </article>
 
     </body>
