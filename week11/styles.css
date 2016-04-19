@@ -1,0 +1,16 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+    font-size: 12px;
+}
+
+div.logo{
+    margin: 5px;
+    float: left;
+    width: 240px;
+}
+
+div.logo img{
+    width: 100%;
+    height: auto;
+}
