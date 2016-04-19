@@ -8,9 +8,9 @@ div.logo{
     margin: 5px;
     float: left;
     width: 100px;
+    height: 140px;
 }
 
 div.logo img{
     width: 100%;
-    height: auto;
 }
