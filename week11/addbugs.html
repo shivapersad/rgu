@@ -30,18 +30,26 @@
 
 <div class="grid-90">
     <form>
-        <label for="bugname">Bug Name</label>
-        <input type="text" id="bugname" name="bugname" placeholder="Bug Name" required>
-        <br>
-        <label for="bugsummary">Bug Summary</label>
-        <textarea id="bugsummary" name="bugsummary" rows="5" cols="25" required></textarea>
-        <br>
-        <label for="bugcategory">Bug Category</label>
-        <select id="bugcategory">
-            <option value="android">Android</option>
-            <option value="ios">iOS</option>
-            <option value="windows">Windows</option>
-        </select>
+        <table>
+            <tr>
+                <td><label for="bugname">Bug Name</label></td>
+                <td><input type="text" id="bugname" name="bugname" placeholder="Bug Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="bugsummary">Bug Summary</label></td>
+                <td><textarea id="bugsummary" name="bugsummary" rows="5" cols="25" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="bugcategory">Bug Category</label></td>
+                <td>
+                    <select id="bugcategory">
+                        <option value="android">Android</option>
+                        <option value="ios">iOS</option>
+                        <option value="windows">Windows</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </form>
 </div>
 
