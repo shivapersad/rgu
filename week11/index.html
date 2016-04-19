@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <title>BugTracker</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <img src="logo.png">
+        <div class="grid-container">
+            <div class="logo grid-100">
+                <img src="logo.png">
+            </div>
+            <h1>BugTracker</h1>
+            <h2>Keeping track of all the pesky little bugs</h2>
         </div>
-        <h1>BugTracker</h1>
-        <h2>Keeping track of all the pesky little bugs</h2>
     </header>
 
-    <nav>
+    <br><br>
+
+    <nav class="grid-25">
         <ul>
             <li><a href="bugs.html">All Bug Items</a></li>
             <li><a href="bugs.html">Android Bugs</a></li>
@@ -25,7 +30,7 @@
         </ul>
     </nav>
 
-    <p>
+    <p class="grid-75">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla, odio a tincidunt fermentum,
         tortor quam aliquam nisi, at semper neque velit sed magna. Curabitur id malesuada odio, et tempor libero.
         Donec posuere neque sit amet lorem tempor sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
