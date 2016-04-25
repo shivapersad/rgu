@@ -21,13 +21,23 @@
 
     <nav class="grid-10">
         <ul>
-            <li><a href="showbugs.html">All Bug Items</a></li>
-            <li><a href="showbugs.html">Android Bugs</a></li>
-            <li><a href="showbugs.html">iOS Bugs</a></li>
-            <li><a href="showbugs.html">Windows Bugs</a></li>
-            <li><a href="addbugs.html">Insert Bug</a></li>
+            <li><a href="showbugs.php">All Bug Items</a></li>
+            <li><a href="showbugs.php">Android Bugs</a></li>
+            <li><a href="showbugs.php">iOS Bugs</a></li>
+            <li><a href="showbugs.php">Windows Bugs</a></li>
+            <li><a href="addbugs.php">Insert Bug</a></li>
         </ul>
     </nav>
+
+    <p class="grid-90">
+        <div class="bold">StageFright Bug</div>
+        <div class="italics">Android</div>
+        <div>
+            Stagefright is the collective name for a group of software bugs, that affect versions 2.2 and newer of the
+            Android operating system, allowing an attacker to perform arbitrary operations on the victim device through
+            remote code execution and privilege escalation.
+        </div>
+    </p>
 
     <footer class="grid-100">
         Designed by Shiva Persad 2016
