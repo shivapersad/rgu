@@ -49,7 +49,16 @@
             while ($row = $result->fetch_array())
             {
                 echo "<p class=\"bold\">" . $row['bugName'] . "</p>";
-                echo "<p class=\"italics\">" . $row['BugCategory'] . "</p>";
+                switch ($row['BugCategory']){
+                    case "android": $bugCategory = "Android";
+                        break;
+                    case "ios": $bugCategory = "iOS";
+                        break;
+                    case "microsoft": $bugCategory = "Microsoft";
+                        break;
+                    default: break;
+                }
+                echo "<p class=\"italics\">" . $bugCategory . "</p>";
                 echo "<p>" . $row['BugSummary'] . "</p>";
                 echo "<hr>";
             }
