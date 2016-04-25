@@ -33,3 +33,7 @@ li a{
     width: 60%;
     padding: 10px;
 }
+
+#right{
+    text-align: right;
+}
