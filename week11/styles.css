@@ -18,3 +18,9 @@ div.logo img{
 ul{
     list-style: none;
 }
+
+.center{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
