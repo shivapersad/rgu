@@ -38,10 +38,10 @@ li a{
     text-align: right;
 }
 
-.bold{
+p.bold{
     font-weight: bold;
 }
 
-.italics{
+p.italics{
     font-style: italic;
 }
