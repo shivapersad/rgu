@@ -21,10 +21,10 @@
 
     <nav class="grid-10">
         <ul>
-            <li><a href="showbugs.php">All Bug Items</a></li>
-            <li><a href="showbugs.php">Android Bugs</a></li>
-            <li><a href="showbugs.php">iOS Bugs</a></li>
-            <li><a href="showbugs.php">Windows Bugs</a></li>
+            <li><a href="showbugs.php?bugCategory=all">All Bug Items</a></li>
+            <li><a href="showbugs.php?bugCategory=Android">Android Bugs</a></li>
+            <li><a href="showbugs.php?bugCategory=iOS">iOS Bugs</a></li>
+            <li><a href="showbugs.php?bugCategory=Microsoft">Windows Bugs</a></li>
             <li><a href="addbugs.php">Insert Bug</a></li>
         </ul>
     </nav>
