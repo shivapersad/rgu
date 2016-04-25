@@ -2,35 +2,6 @@
 
     include_once('connection.php');
 
-    if ($_POST)
-    {
-        echo "POST is set";
-
-        $bugName = $_POST['bugname'];
-        $bugSummary = $_POST['bugsummary'];
-        $bugCategory = $_POST['bugcategory'];
-
-        if ($db -> connect_errno)
-        {
-            die ('Connect failed: ' . $db->connect_errno);
-        }
-
-        $sql = "INSERT INTO bugs VALUES (NULL,\"$bugname\",\"$bugSummary\",\"$bugCategory\")";
-
-        mysqli_query($db,$sql);
-
-        redirect('Location: index.php');
-    }
-    elseif ($_GET)
-        {
-            echo "GET is set";
-        }
-        else
-            {
-                redirect('Location: index.php');
-                echo "Something is set";
-            }
-
 ?>
 
 <!DOCTYPE html>
@@ -65,31 +36,48 @@
     </nav>
 
     <div class="grid-90">
-        <form action="addbugs.php" method="post">
-            <table>
-                <tr>
-                    <td><label for="bugname">Bug Name</label></td>
-                    <td><input type="text" id="bugname" name="bugname" placeholder="Bug Name" required></td>
-                </tr>
-                <tr>
-                    <td><label for="bugsummary">Bug Summary</label></td>
-                    <td><textarea id="bugsummary" name="bugsummary" rows="5" cols="25" required></textarea></td>
-                </tr>
-                <tr>
-                    <td><label for="bugcategory">Bug Category</label></td>
-                    <td>
-                        <select id="bugcategory" required>
-                            <option value="android">Android</option>
-                            <option value="ios">iOS</option>
-                            <option value="windows">Windows</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="right" colspan="2"><input type="submit" value="Submit"></td>
-                </tr>
-            </table>
-        </form>
+    <?
+        if ($_SERVER['REQUEST_METHOD'] === 'GET')
+        {
+    ?>
+            <form action="<? {$_SERVER['PHP_SELF'];} ?>" method="post">
+                <table>
+                    <tr>
+                        <td><label for="bugname">Bug Name</label></td>
+                        <td><input type="text" id="bugname" name="bugname" placeholder="Bug Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bugsummary">Bug Summary</label></td>
+                        <td><textarea id="bugsummary" name="bugsummary" rows="5" cols="25" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bugcategory">Bug Category</label></td>
+                        <td>
+                            <select id="bugcategory" required>
+                                <option value="android">Android</option>
+                                <option value="ios">iOS</option>
+                                <option value="windows">Windows</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="right" colspan="2"><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+            <?
+        }
+                elseif ($_SERVER['REQUEST_METHOD'] === 'POST')
+                {
+                    $sql = "INSERT INTO bugs VALUES (NULL,'$bugname','$bugsummary','$bugcategory')";
+                    mysqli_query($db,$sql);
+                    redirect('Location: showbugs.php');
+                }
+                else
+                {
+                    redirect('Location: index.php');
+                }
+            ?>
     </div>
 
     <footer class="grid-100">
