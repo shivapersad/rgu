@@ -1,3 +1,21 @@
+<?php
+
+    include_once("connection.php");
+
+    if ($connection -> connect_errno)
+    {
+        die ('Connect failed: ' . $connection->connect_errno);
+    }
+
+    $sql = "SELECT * FROM bugs";
+
+    if ($result = !mysqli_query($connection,$sql))
+    {
+        echo "Error: " . mysqli_error($connection);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,15 +47,17 @@
         </ul>
     </nav>
 
-    <p class="grid-90">
-        <div class="bold">StageFright Bug</div>
-        <div class="italics">Android</div>
-        <div>
-            Stagefright is the collective name for a group of software bugs, that affect versions 2.2 and newer of the
-            Android operating system, allowing an attacker to perform arbitrary operations on the victim device through
-            remote code execution and privilege escalation.
-        </div>
-    </p>
+    <div class="grid-90">
+        <?php
+            $row = mysqli_fetch_assoc($result);
+            foreach ($row as $bug)
+            {
+                echo "<p class=\"bold\">" . $bug->bugName . "</p>";
+                echo "<p class=\"italics\">" . $bug->BugCategory . "</p>";
+                echo "<p>" . $bug->BugSummary . "</p>";
+            }
+        ?>
+    </div>
 
     <footer class="grid-100">
         Designed by Shiva Persad 2016
