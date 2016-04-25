@@ -4,6 +4,8 @@
 
     if ($_POST)
     {
+        echo "POST is set";
+
         $bugName = $_POST['bugname'];
         $bugSummary = $_POST['bugsummary'];
         $bugCategory = $_POST['bugcategory'];
@@ -13,7 +15,11 @@
             die ('Connect failed: ' . $db->connect_errno);
         }
 
-        echo "POST is set";
+        $sql = "INSERT INTO bugs VALUES (NULL,\"$bugname\",\"$bugSummary\",\"$bugCategory\")";
+
+        mysqli_query($db,$sql);
+
+        redirect('Location: index.php');
     }
     elseif ($_GET)
         {
@@ -21,6 +27,7 @@
         }
         else
             {
+                redirect('Location: index.php');
                 echo "Something is set";
             }
 
@@ -58,7 +65,7 @@
     </nav>
 
     <div class="grid-90">
-        <form>
+        <form action="addbugs.php" method="post">
             <table>
                 <tr>
                     <td><label for="bugname">Bug Name</label></td>
