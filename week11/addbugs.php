@@ -69,6 +69,9 @@
         }
                 elseif ($_SERVER['REQUEST_METHOD'] === 'POST')
                 {
+                    $bugname = $_POST['bugname'];
+                    $bugsummary = $_POST['bugsummary'];
+                    $bugcategory = $_POST['bugcategory'];
                     $sql = "INSERT INTO bugs VALUES (NULL,'$bugname','$bugsummary','$bugcategory')";
                     mysqli_query($db,$sql);
                     redirect('Location: showbugs.php');
