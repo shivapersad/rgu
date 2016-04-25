@@ -7,7 +7,16 @@
         die ('Connect failed: ' . $db->connect_errno);
     }
 
-    $sql = "SELECT * FROM bugs";
+    $bugcategory = $_GET["bugCategory"];
+
+    if ($bugcategory == "all")
+    {
+        $sql = "SELECT * FROM bugs";
+    }
+    else
+        {
+            $sql = "SELECT * FROM bugs WHERE BugCategory = '$bugcategory'";
+        }
 
     $result = mysqli_query($db,$sql);
 
