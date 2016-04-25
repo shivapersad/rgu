@@ -74,11 +74,11 @@
                     $bugcategory = $_POST['bugcategory'];
                     $sql = "INSERT INTO bugs VALUES (NULL,'$bugname','$bugsummary','$bugcategory')";
                     mysqli_query($db,$sql);
-                    redirect('Location: showbugs.php');
+                    header('Location: showbugs.php');
                 }
                 else
                 {
-                    redirect('Location: index.php');
+                    header('Location: index.php');
                 }
             ?>
     </div>
