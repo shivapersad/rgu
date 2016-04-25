@@ -9,10 +9,7 @@
 
     $sql = "SELECT * FROM bugs";
 
-    if ($result = !mysqli_query($db,$sql))
-    {
-        echo "Error: " . mysqli_error($db);
-    }
+    $result = mysqli_query($db,$sql);
 
 ?>
 
@@ -49,12 +46,11 @@
 
     <div class="grid-90">
         <?php
-            $row = mysqli_fetch_assoc($result);
-            foreach ($row as $bug)
+            while ($row = $result->fetch_array())
             {
-                echo "<p class=\"bold\">" . $bug->bugName . "</p>";
-                echo "<p class=\"italics\">" . $bug->BugCategory . "</p>";
-                echo "<p>" . $bug->BugSummary . "</p>";
+                echo "<p class=\"bold\">" . $row['bugName'] . "</p>";
+                echo "<p class=\"italics\">" . $row['BugCategory'] . "</p>";
+                echo "<p>" . $row['BugSummary'] . "</p>";
             }
         ?>
     </div>
