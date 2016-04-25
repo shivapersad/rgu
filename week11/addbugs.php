@@ -2,7 +2,7 @@
 
     include_once('connection.php');
 
-    if (isset($_POST))
+    if ($_POST)
     {
         $bugName = $_POST['bugname'];
         $bugSummary = $_POST['bugsummary'];
@@ -15,7 +15,7 @@
 
         echo "POST is set";
     }
-    elseif (isset($_GET))
+    elseif ($_GET)
         {
             echo "GET is set";
         }
