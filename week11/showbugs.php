@@ -1,17 +1,17 @@
 <?php
 
-    include_once("connection.php");
+    include_once('connection.php');
 
-    if ($connection -> connect_errno)
+    if ($db -> connect_errno)
     {
-        die ('Connect failed: ' . $connection->connect_errno);
+        die ('Connect failed: ' . $db->connect_errno);
     }
 
     $sql = "SELECT * FROM bugs";
 
-    if ($result = !mysqli_query($connection,$sql))
+    if ($result = !mysqli_query($db,$sql))
     {
-        echo "Error: " . mysqli_error($connection);
+        echo "Error: " . mysqli_error($db);
     }
 
 ?>
