@@ -1,3 +1,31 @@
+<?php
+
+    include_once('connection.php');
+
+    if (isset($_POST))
+    {
+        $bugName = $_POST['bugname'];
+        $bugSummary = $_POST['bugsummary'];
+        $bugCategory = $_POST['bugcategory'];
+
+        if ($db -> connect_errno)
+        {
+            die ('Connect failed: ' . $db->connect_errno);
+        }
+
+        echo "POST is set";
+    }
+    elseif (isset($_GET))
+        {
+            echo "GET is set";
+        }
+        else
+            {
+                echo "Something is set";
+            }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,3 +91,9 @@
 </div>
 </body>
 </html>
+
+<?php
+
+    mysqli_close($db);
+
+?>
