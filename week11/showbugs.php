@@ -51,6 +51,7 @@
                 echo "<p class=\"bold\">" . $row['bugName'] . "</p>";
                 echo "<p class=\"italics\">" . $row['BugCategory'] . "</p>";
                 echo "<p>" . $row['BugSummary'] . "</p>";
+                echo "<hr>";
             }
         ?>
     </div>
