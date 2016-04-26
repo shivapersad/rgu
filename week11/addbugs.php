@@ -74,7 +74,7 @@
                     $bugcategory = $_POST['bugcategory'];
                     $sql = "INSERT INTO bugs VALUES (NULL,'$bugname','$bugsummary','$bugcategory')";
                     mysqli_query($db,$sql);
-                    header('Location: showbugs.php');
+                    header('Location: showbugs.php?bugCategory=all');
                 }
                 else
                 {
