@@ -2,6 +2,11 @@
 
     include_once('connection.php');
 
+    if ($conn -> connect_errno)
+    {
+        die ('Connect failed: ' . $conn->connect_errno);
+    }
+
 ?>
 
 <!DOCTYPE html>
