@@ -36,6 +36,26 @@
         </div>
 
         <div class="grid-75">
+            <?php
+
+                $sql = "SELECT * FROM bugs";
+
+                $result = mysqli_query($conn,$sql);
+
+                if (mysqli_num_rows($result) > 0)
+                {
+                    while ($row = mysqli_fetch_assoc($result))
+                    {
+                        echo "<p>Bug Name: " . $row["bugName"] . "</p>";
+                        echo "<p>Bug Category: " . $row["bugCategory"] . "</p>";
+                        echo "<p>Bug Summary: <br>" . $row["bugSummary"] . "</p>";
+                        echo "<hr>";
+                    }
+                }
+
+            ?>
+
+            <!--
             <p>Bug Name: StageFright</p>
             <p>Bug Category: Android</p>
             <p>
@@ -64,6 +84,7 @@
                 The MicroHard bug infects windows machines and makes them harder to use. So hard to use infact that
                 it renders them more useless than they would be in the first place.
             </p>
+            -->
 
         </div>
     </main>
