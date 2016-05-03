@@ -32,10 +32,10 @@
     <main class="grid-75">
         <div id="navigation" class="grid-25">
             <ul>
-                <li><a href="bugs.php">All Bug Items</a></li>
-                <li><a href="bugs.php">Android Bugs</a></li>
-                <li><a href="bugs.php">iOS Bugs</a></li>
-                <li><a href="bugs.php">Windows Bugs</a></li>
+                <li><a href="bugs.php?bugCategory=all">All Bug Items</a></li>
+                <li><a href="bugs.php?bugCategory=android">Android Bugs</a></li>
+                <li><a href="bugs.php?bugCategory=ios">iOS Bugs</a></li>
+                <li><a href="bugs.php?bugCategory=windows">Windows Bugs</a></li>
                 <li><a href="addbugs.php">Insert Bug</a></li>
             </ul>
         </div>
@@ -43,7 +43,15 @@
         <div class="grid-75">
             <?php
 
-                $sql = "SELECT * FROM bugs";
+                if ($_GET['bugCategory'] == "all")
+                {
+                    $sql = "SELECT * FROM bugs";
+                }
+                else
+                    {
+                        $bugCategory = $_GET['bugCategory'];
+                        $sql = "SELECT * FROM bugs WHERE bugCategory='$bugCategory'";
+                    }
 
                 $result = mysqli_query($conn,$sql);
 
