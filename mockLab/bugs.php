@@ -42,7 +42,7 @@
 
                 $result = mysqli_query($conn,$sql);
 
-                echo print_r($result);
+                echo "<pre>" . print_r($result) . "</pre>";
                 /*if (mysqli_num_rows($result) > 0)
                 {
                     while ($row = mysqli_fetch_assoc($result))
