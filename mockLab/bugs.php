@@ -52,6 +52,10 @@
                         echo "<hr>";
                     }
                 }
+                else
+                    {
+                        echo "No bugs found. Yay!";
+                    }
 
             ?>
 
