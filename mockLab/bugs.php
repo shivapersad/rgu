@@ -36,7 +36,7 @@
                 <li><a href="bugs.php">Android Bugs</a></li>
                 <li><a href="bugs.php">iOS Bugs</a></li>
                 <li><a href="bugs.php">Windows Bugs</a></li>
-                <li><a href="addbugs.html">Insert Bug</a></li>
+                <li><a href="addbugs.php">Insert Bug</a></li>
             </ul>
         </div>
 

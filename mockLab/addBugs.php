@@ -21,11 +21,11 @@
     <main class="grid-75">
         <div id="navigation" class="grid-25">
             <ul>
-                <li><a href="bugs.html">All Bug Items</a></li>
-                <li><a href="bugs.html">Android Bugs</a></li>
-                <li><a href="bugs.html">iOS Bugs</a></li>
-                <li><a href="bugs.html">Windows Bugs</a></li>
-                <li><a href="addbugs.html">Insert Bug</a></li>
+                <li><a href="bugs.php">All Bug Items</a></li>
+                <li><a href="bugs.php">Android Bugs</a></li>
+                <li><a href="bugs.php">iOS Bugs</a></li>
+                <li><a href="bugs.php">Windows Bugs</a></li>
+                <li><a href="addbugs.php">Insert Bug</a></li>
             </ul>
         </div>
 
