@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="unsemantic-grid-responsive-tablet.css">
+</head>
+<body>
+
+<div class="grid-container">
+
+    <header class="grid-75">
+        <img src="logo.png" id="image" class="grid-25">
+        <div class="grid-75">
+            <h1>BugTracker</h1>
+            <p id="subtitle">Keeping track of all the pesky little bugs</p>
+        </div>
+    </header>
+
+    <main class="grid-75">
+        <div id="navigation" class="grid-25">
+            <ul>
+                <li><a href="bugs.html">All Bug Items</a></li>
+                <li><a href="bugs.html">Android Bugs</a></li>
+                <li><a href="bugs.html">iOS Bugs</a></li>
+                <li><a href="bugs.html">Windows Bugs</a></li>
+                <li><a href="addbugs.html">Insert Bug</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-75">
+            <form class="input-form">
+
+                <div class="field">
+                    <label>Bug Name</label>
+                    <input type="text" name="bugName" placeholder="Bug Name" autofocus required>
+                </div>
+                <div class="field">
+                    <label>Bug Summary</label>
+                    <textarea rows="5" cols="50" name="bugSummary" placeholder="Bug Summary" required></textarea>
+                </div>
+                <div class="field">
+                    <label>Bug Category</label>
+                    <select name="bugCategory" required>
+                        <option value="android" selected>Android</option>
+                        <option value="ios">iOS</option>
+                        <option value="windows">Windows</option>
+                    </select>
+                </div>
+                <div id="btnRight">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="grid-75">Designed by Shiva Persad, 2016</footer>
+
+</div>
+
+
+</body>
+</html>

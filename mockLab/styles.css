@@ -1,0 +1,64 @@
+body{
+    font-family: 'Roboto light', sans-serif;
+}
+
+img#image{
+    width: 200px;
+}
+
+header.h1{
+    position: relative;
+}
+
+#border1{
+    border: 2px solid;
+}
+
+p#subtitle{
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 24px 0 8px 16px;
+    color: black;
+}
+
+footer{
+    margin: 8px 0 8px 24px;
+}
+
+.input-form{
+    padding: 20px;
+}
+
+.input-form .field{
+    padding: 4px;
+    margin: 1px;
+}
+
+.input-form .field label{
+    display: inline-block;
+    width: 120px;
+    margin-left: 5px;
+}
+
+.input-form .field input{
+    display: inline-block;
+}
+
+#btnRight{
+    float: right;
+    margin-right: 90px;
+}
+
+hr{
+    height: 2px;
+}
