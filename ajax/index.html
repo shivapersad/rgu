@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Test Page</title>
+
+    <script>
+
+        function insert(val)
+        {
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                    document.getElementbyId("success").innerHTML = xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open("GET","insert.php",true);
+            xmlhttp.send();
+        }
+
+    </script>
+</head>
+<body>
+    <button type="button" name="value" value="1" onclick="insert(this.value)">Click me!!</button>
+
+    <p id="success"></p>
+</body>
+</html>
