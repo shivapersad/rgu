@@ -15,7 +15,7 @@
             $val = $_GET['value'];
             $sql = "INSERT INTO ajax VALUES (NULL,'$val')";
             $result = mysqli_query($db,$sql);
-            echo "Success";
+            echo "Successful: " . $sql;
         }
 
     mysqli_close($db);
