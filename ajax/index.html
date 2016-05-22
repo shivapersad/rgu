@@ -11,7 +11,7 @@
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function(){
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                    document.getElementbyId("success").innerHTML = xmlhttp.responseText;
+                    document.getElementById("success").innerHTML = xmlhttp.responseText;
                 }
             };
             xmlhttp.open("GET","insert.php",true);
