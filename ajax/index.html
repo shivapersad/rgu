@@ -14,7 +14,7 @@
                     document.getElementById("success").innerHTML = xmlhttp.responseText;
                 }
             };
-            xmlhttp.open("GET","insert.php",true);
+            xmlhttp.open("GET","insert.php?value="+val,true);
             xmlhttp.send();
         }
 
